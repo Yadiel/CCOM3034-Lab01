@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
-#include "classPractice-1.h"
-#include "classPractice-1.cpp"
+#include "classPractice.h"
+#include "classPractice.cpp"
  
 using namespace std;
 
