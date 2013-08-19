@@ -1,5 +1,5 @@
 #include <iostream>
-#include "classPractice-1.h"
+#include "classPractice.h"
 #include <cmath>
 
  
