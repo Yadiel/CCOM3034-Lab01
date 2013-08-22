@@ -31,7 +31,10 @@ int Fraction::getNum(){
 int Fraction::getDenom(){
 	return denom;
 }
-int Fraction::gcd(Fraction F){
+
+
+int Fraction::gcd(Fraction &F){
+    
 	int gcd;
 	while (F.denom != 0){
 		gcd = F.num % F.denom;
@@ -41,7 +44,11 @@ int Fraction::gcd(Fraction F){
 	}
 	return F.num;	
 }
-Fraction Fraction::reduce(Fraction F){
+
+Fraction Fraction::reduce(Fraction &F)  {
+         
+   
+         
 	int gc = gcd(F);
 
 	F.num = F.num / gc;
@@ -50,7 +57,9 @@ Fraction Fraction::reduce(Fraction F){
 	return F;
 }
 
-Fraction Fraction::add(const Fraction& F) const{
+
+
+Fraction Fraction::add(const Fraction &F) const{
 
 	Fraction result;
 
@@ -106,3 +115,5 @@ void Fraction::gt(const Fraction& F) const{
 	}
 	else cout << "false";
 }
+
+
