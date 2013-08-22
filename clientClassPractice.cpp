@@ -1,7 +1,6 @@
 #include <iostream>
-#include <algorithm>
 #include "classPractice.h"
-#include "classPractice.cpp"
+#include "classPractice-1.cpp"
  
 using namespace std;
 
@@ -84,5 +83,7 @@ int main(){
 
 
 
+
+    system ("pause");
 	return 0;
 }
