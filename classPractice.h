@@ -1,31 +1,42 @@
-#ifndef FRAC_H
-#define FRAC_H
+#include "classPractice.h"
+#include "asig01.cpp"
+#include <iostream> 
 
-class Fraction {
-	private:
-		int num, denom;
-	public:
-        //constructors
-		Fraction();
-		Fraction(int n, int d);
+/* Assignment #1
+Author: Yadiel Cabrera
+Student #: 801-10-0880
+Professor: Rafael Arce Nazario 
 
-        //setters
-		void setNum(int n);
-		void setDenom(int d);
-		
-		//getters
-		int getNum();
-		int getDenom();
-		
-		//member functions for tasks asked in lab 
-		void fracPrint();
-		Fraction add(const Fraction& F) const;
-		Fraction sub(const Fraction &F) const; 
-		Fraction div(const Fraction &F) const; 
-		Fraction gt(const Fraction &F) const; 
-		Fraction reduce(const Fraction &F) const; 
-		
-        
-};
+*/ 
 
-#endif
+
+using namespace std;
+
+int main () { 
+
+   cout << "Now to test the Array Of Fractions class and its methods" << endl; 
+   
+   ArrayOfFractions Array; 
+   
+   Array.sortAscending(); 
+   
+   Array.printArray(); 
+   
+   cout << endl; 
+   
+   Array.arrayMax (); 
+   
+   cout << endl; 
+   
+   Array.arrayMin(); 
+   
+   cout << endl; 
+   
+   Array.arraySum();
+   
+   cout << endl; 
+   
+  
+    return 0; 
+} 
+
